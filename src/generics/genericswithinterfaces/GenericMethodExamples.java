@@ -3,6 +3,7 @@ package generics.genericswithinterfaces;
 import generics.Person;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
 public class GenericMethodExamples {
@@ -18,9 +19,19 @@ public class GenericMethodExamples {
 
         final Person youngestCast = min(personList1, new AgeComparator());
         System.out.println(youngestCast);
+
+        // another test of the method min(...) to check it is fully generic or not
+        List<Integer> numbers = new ArrayList<>();
+        numbers.add(1);
+        numbers.add(2);
+        numbers.add(3);
+
+        int lowest = min(numbers, Integer::compareTo);
+        System.out.println("lowest in he list is = " + lowest);
+
     }
 
-    private static <T extends Person> T min(List<T> personList1, AgeComparator ageComparator) {
+    private static <T> T min(List<T> personList1, Comparator<T> ageComparator) {
         if(personList1.isEmpty()) {
             throw new IllegalArgumentException("List is empty. Cannot find minimum");
         }
