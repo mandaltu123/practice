@@ -17,7 +17,7 @@ public class SortedOrderTest {
     }
 
     @Test
-    public void shouldFlipOrderOfMisorderedPair() {
+    public void shouldFlipOrderOfUnorderedPair() {
         SortedPair<Integer> pair = new SortedPair<>(2, 1);
         Assertions.assertEquals(1, pair.getFirst().intValue());
         Assertions.assertEquals(2, pair.getSecond().intValue());

@@ -1,7 +1,9 @@
 package generics.genericswithinterfaces;
 
 import generics.Person;
-import java8.lambdas.Comparator;
+
+import java.util.Comparator;
+
 
 public class AgeComparator implements Comparator<Person> {
 

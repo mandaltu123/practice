@@ -20,7 +20,6 @@ public class SortedPair<T extends Comparable<T>> {
             this.first = right;
             this.second = left;
         }
-
     }
 
     public T getFirst() {
