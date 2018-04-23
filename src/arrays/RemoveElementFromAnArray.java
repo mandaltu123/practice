@@ -1,5 +1,7 @@
 package arrays;
 
+import java.util.Arrays;
+
 public class RemoveElementFromAnArray {
 
 
@@ -31,15 +33,12 @@ public class RemoveElementFromAnArray {
     public static void main(String[] args) {
 
         int arr[] = {11, 15, 6, 8, 9, 10};
+        System.out.println("input array is      = " + Arrays.toString(arr));
         int n = arr.length;
         int x = 6;
 
         // Delete x from arr[]
-        n = remove(arr, n, x);
-
-        System.out.println("Modified array is");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i]+" ");
-        }
+        remove(arr, n, x);
+        System.out.println("Modified array is   = " + Arrays.toString(arr));
     }
 }
