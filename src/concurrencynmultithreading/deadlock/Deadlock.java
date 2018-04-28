@@ -51,3 +51,46 @@ public class Deadlock {
         }
     }
 }
+
+/**
+ * Here is the JVisuakVm thread dump
+ *
+ *
+ *
+ * Found one Java-level deadlock:
+ =============================
+ "pool-1-thread-2":
+ waiting to lock monitor 0x00007f97df8394a8 (object 0x000000079579b580, a concurrencynmultithreading.deadlock.Deadlock$Friend),
+ which is held by "pool-1-thread-1"
+ "pool-1-thread-1":
+ waiting to lock monitor 0x00007f97df838008 (object 0x000000079579b5c0, a concurrencynmultithreading.deadlock.Deadlock$Friend),
+ which is held by "pool-1-thread-2"
+
+ Java stack information for the threads listed above:
+ ===================================================
+ "pool-1-thread-2":
+ at concurrencynmultithreading.deadlock.Deadlock$Friend.bowBck(Deadlock.java:26)
+ - waiting to lock <0x000000079579b580> (a concurrencynmultithreading.deadlock.Deadlock$Friend)
+ at concurrencynmultithreading.deadlock.Deadlock$Friend.bow(Deadlock.java:22)
+ - locked <0x000000079579b5c0> (a concurrencynmultithreading.deadlock.Deadlock$Friend)
+ at concurrencynmultithreading.deadlock.Deadlock$2.run(Deadlock.java:43)
+ at java.lang.Thread.run(Thread.java:748)
+ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ at java.lang.Thread.run(Thread.java:748)
+ "pool-1-thread-1":
+ at concurrencynmultithreading.deadlock.Deadlock$Friend.bowBck(Deadlock.java:26)
+ - waiting to lock <0x000000079579b5c0> (a concurrencynmultithreading.deadlock.Deadlock$Friend)
+ at concurrencynmultithreading.deadlock.Deadlock$Friend.bow(Deadlock.java:22)
+ - locked <0x000000079579b580> (a concurrencynmultithreading.deadlock.Deadlock$Friend)
+ at concurrencynmultithreading.deadlock.Deadlock$1.run(Deadlock.java:37)
+ at java.lang.Thread.run(Thread.java:748)
+ at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+ at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+ at java.lang.Thread.run(Thread.java:748)
+
+ Found 1 deadlock.
+
+
+ *
+ */
