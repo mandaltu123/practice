@@ -53,7 +53,7 @@ public class Deadlock {
 }
 
 /**
- * Here is the JVisuakVm thread dump
+ * Here is the JVisualVm thread dump
  *
  *
  *
