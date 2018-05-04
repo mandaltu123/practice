@@ -20,6 +20,12 @@ public class ProgramForArrayRotation {
     }
 
 
+    /**
+     *
+     * @param arr
+     * @param d
+     * @param n
+     */
     public static void rotateUsingTempArray(int[] arr, int d, int n) {
 
         int i;
@@ -27,6 +33,7 @@ public class ProgramForArrayRotation {
             leftRotateByOne(arr, n);
         }
     }
+
 
     private static void leftRotateByOne(int[] arr, int n) {
         int i, tmp;
@@ -37,6 +44,4 @@ public class ProgramForArrayRotation {
         }
         arr[i] = tmp;
     }
-
-
 }
