@@ -3,12 +3,11 @@ package generics.boundedwildcards;
 import generics.Employee;
 import generics.Partner;
 import generics.Person;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.regex.Pattern;
 
 public class PersonStorageTest {
 
