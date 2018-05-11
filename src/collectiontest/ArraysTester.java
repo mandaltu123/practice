@@ -9,7 +9,7 @@ public class ArraysTester {
         Product door = new Product("Wooden door", 35);
         Product floorPanel = new Product("Floor panel", 25);
 
-        // Create arrays
+        // Create ds.arrays
         Product[] products = {door, floorPanel};
         System.out.println(Arrays.toString(products));
         // print a particular element

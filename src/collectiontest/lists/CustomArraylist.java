@@ -53,7 +53,7 @@ public class CustomArraylist {
 
         /**
          * For implementation, please refer
-         * /Users/tuhinmandal/programming/scala-learning/actor-learnings/java-practice-again/src/arrays/RemoveElementFromAnArray.java
+         * /Users/tuhinmandal/programming/scala-learning/actor-learnings/java-practice-again/src/ds.arrays/RemoveElementFromAnArray.java
          */
 
     }

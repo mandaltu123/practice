@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  * If we look at the code as compared to TheArrayProblem, we can see that the arraylist takes away some of those
- * array re sizing problems and gives us more flexibility as compared to arrays
+ * array re sizing problems and gives us more flexibility as compared to ds.arrays
  */
 public class ListExample {
 
