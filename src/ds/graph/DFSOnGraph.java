@@ -77,7 +77,9 @@ public class DFSOnGraph
             graph.addEdge(3, 3);
 
             dfs(2);
+            /**
+             * Output is : 2 0 1 3
+             */
         }
-
     }
 }
