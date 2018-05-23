@@ -60,6 +60,7 @@ public class StringIntFormatting {
         }
 
         System.out.println("================================");
+        scanner.close();
     }
 
 }
