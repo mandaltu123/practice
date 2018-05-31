@@ -23,10 +23,10 @@ public class SelectionSort {
         }
 
         // current minimum
-        int current_min = 0;
+        int current_min;
         for (int i = 0; i< input.length; i++)
         {
-            current_min = i; // asusming the first element is the minimum
+            current_min = i; // assuming the first element is the minimum
             // start iterating over the next set of elements and find the minimum
             for (int j = i + 1; j < input.length; j++)
             {
