@@ -2,6 +2,14 @@ package ds.sorting;
 
 import java.util.Arrays;
 
+
+/**
+ * Sorting algorithms are the pillars of data structure
+ *
+ * Please refer cs50 courses for understanding
+ *
+ * https://www.youtube.com/watch?v=f8hXR_Hvybo&list=PLNUGZd06N4RdQi2ZX5tGvNYhdzzeJmNCF&index=3
+ */
 public class SelectionSort {
 
 
