@@ -1,0 +1,1 @@
+package design.solidprinciple.singleresponsibility;
