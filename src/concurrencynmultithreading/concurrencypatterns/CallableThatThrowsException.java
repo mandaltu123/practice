@@ -7,19 +7,21 @@ public class CallableThatThrowsException {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         Callable<String> task = () ->
         {
-            throw new IllegalStateException("Throwing some exception: "+ Thread.currentThread().getName());
+            throw new IllegalStateException("Throwing some exception: " + Thread.currentThread().getName());
         };
 
         ExecutorService executorService = Executors.newFixedThreadPool(4);
-        try
-        {
-            for(int i = 0; i < 10; i++)
-            {
+        try {
+            for (int i = 0; i < 10; i++) {
                 Future<String> future = executorService.submit(task);
-                System.out.println(future.get());
+                try {
+                    System.out.println(future.get());
+                } catch (Exception ise) {
+                    System.out.println("Callable threw : " + ise.getMessage());
+                }
+
             }
-        } finally
-        {
+        } finally {
             executorService.shutdown();
         }
     }
