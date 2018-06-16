@@ -4,7 +4,7 @@ package basics.polymorphism;
  * Polymorphism is the concept where an object behaves differently in different situations
  * There are two types of polymorphism – compile time polymorphism and runtime polymorphism.
  */
-public class PolymorphismTest {
+public class OverLoadingOrCmpiletimePolymorphism {
 
     public static void main(String[] args) {
         Circle circle = new Circle();
